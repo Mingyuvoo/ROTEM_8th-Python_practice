@@ -46,3 +46,4 @@ print()
 
 a = "strong"
 print('b'.join(a))
+

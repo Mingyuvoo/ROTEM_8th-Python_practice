@@ -77,7 +77,7 @@ if passResult(20,30):
     print("합격")
 else:
     print("불합격")
-
+#%%
 #%%
 def swapFunc(a,b):
     return {b,a}

@@ -11,9 +11,10 @@ print(sum)
 #%%######################################################
 # 문2) 2~5 까지의 구구단 출력
 first = 2
+second = 1
 while first <=5:
     print(f"{first}단")
-    second = 1
+    #second = 1
     while second <= 9:
         result = first * second
         print(f"{first}X{second} = {result}")
@@ -116,13 +117,12 @@ while num <= 1000:
 #%% continue 연습 문제
 # 문제 1) 1부터 50까지의 숫자 중 3의 배수는 건너뛰고 나머지 수만 출력하라
 number = 1
-
 while number <= 50:
     if number % 3 == 0:
-        pass
-    else:
-        print(number)
-    number +=1
+        number +=1
+        continue
+    print(number)
+    number += 1
 
 #%%######################################################
 # 문제2) 1부터 100까지 출력하되, 4의 배수, 6의 배수는 건너뛴다. 그 외의 수 중 5의 배수만 출력하고 그들의 합도 출력
@@ -138,3 +138,5 @@ while number <= 100:
         print(number)
     number += 1
 print(sum)
+
+
